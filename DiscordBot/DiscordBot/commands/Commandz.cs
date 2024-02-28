@@ -112,11 +112,11 @@ namespace DiscordBot.commands
             eX = rand3;
             eY = rand4;
 
-            for (int y = 0; y < 6; y++)
+            for (int y = 0; y < 5; y++)
             {
                 row.Clear();
 
-                for (int x = 0; x < 6; x++)
+                for (int x = 0; x < 5; x++)
                 {
                     if (x == xPos && y == yPos)
                     {
@@ -125,7 +125,8 @@ namespace DiscordBot.commands
                     else if (eX == x && eY == y)
                     {
                         row.Add(":green_square:");
-                    }else
+                    }
+                    else
                     {
                         row.Add(":blue_square:");
                     }
